@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate/Comments - Transistor Radio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rate or Add Your Comments</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="promotion.html">Promotion Details</a></li>
+                <li><a href="about.html">About the Product</a></li>
+                <li><a href="rate.html">Rate/Comments</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="corporate.html">Corporate Info</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Share Your Feedback</h2>
+        <form id="feedback-form" onsubmit="return validateForm()">
+            <label for="rating">Rating (1-5):</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select a rating</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <label for="comments">Your Comments:</label>
+            <textarea id="comments" name="comments" placeholder="Share your thoughts..." required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <h3>User Reviews</h3>
+        <div id="user-reviews">
+           
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Retro Radio Co. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
